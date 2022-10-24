@@ -237,7 +237,7 @@ WidgetbookThemeTypeData? _getThemeType(ConstantReader annotation) {
   final type = annotation.read('themeType');
   if (!type.isNull) {
     final typeValue = type.typeValue;
-    final element = typeValue.element;
+    final element = typeValue.element2;
     return WidgetbookThemeTypeData(
       name: typeValue.getDisplayString(withNullability: false),
       importStatement: element!.importStatement,

@@ -21,14 +21,14 @@ class UseCaseResolver extends GeneratorForAnnotation<WidgetbookUseCase> {
     }
 
     final useCaseName = annotation.read('name').stringValue;
-    final typeElement = annotation.read('type').typeValue.element!;
+    final typeElement = annotation.read('type').typeValue.element2!;
 
     final typeValue = annotation.read('type').typeValue;
     final componentName = typeValue.getDisplayString(
       withNullability: false,
     );
 
-    final componentDefinitionPath = typeValue.element!.librarySource!.fullName;
+    final componentDefinitionPath = typeValue.element2!.librarySource!.fullName;
 
     final data = WidgetbookUseCaseData(
       name: element.name!,
