@@ -16,7 +16,7 @@ dependencies:
   flutter:
     sdk: flutter
   freezed_annotation: ^2.0.3
-  go_router: ">=3.0.5"
+  go_router: ^5.1.0
   provider: ^6.0.2
   widgetbook_models: ^0.0.7
 
@@ -48,4 +48,3 @@ flutter:
         - asset: google_fonts/Nunito-Regular.ttf
         - asset: google_fonts/Nunito-SemiBold.ttf
         - asset: google_fonts/Nunito-SemiBoldItalic.ttf
-
